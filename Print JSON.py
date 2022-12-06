@@ -4,8 +4,8 @@ from time import sleep
 
 
 class MyApp:
-  version = "1.0.0"
-  version_date = "11.05.2022 @ 9 pm"
+  version = "1.0.1"
+  version_date = "30.05.2022 @ 3 pm"
   
   name = "Print JSON"
 
@@ -81,7 +81,7 @@ def main():
     print("\n\n")
 
     try:
-      fCont = readFile(inp)
+      fCont = readFile(inp.replace("\"", ""))
     except Exception as e:
       print(repr(e))
       continue
